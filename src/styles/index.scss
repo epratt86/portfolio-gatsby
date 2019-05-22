@@ -613,3 +613,9 @@ body {
   max-width: 85%;
   padding: 1rem 0;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
