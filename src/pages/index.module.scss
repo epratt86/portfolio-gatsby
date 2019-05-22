@@ -32,6 +32,9 @@
       p {
         font-size: 1.3rem;
       }
+      p {
+        text-align: center;
+      }
     }
   }
 }
@@ -41,15 +44,21 @@
     background-position: 33%;
     .row {
       display: block;
+      margin-top: 8rem;
 
       .col {
         h1 {
           font-size: 1.7rem;
+          text-align: center;
         }
         h3,
         h5,
         p {
           font-size: 1rem;
+          text-align: center;
+        }
+        p {
+          text-align: right;
         }
       }
     }

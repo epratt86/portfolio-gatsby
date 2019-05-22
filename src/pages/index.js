@@ -17,7 +17,7 @@ const IndexPage = () => {
             <div className={row}>
               <div className={col} />
               <div className={col}>
-                <Typing>
+                <Typing hideCursor="true">
                   <div>
                     <Typing.Speed ms={30} />
                     <h1> welcome to my portfolio. </h1>
