@@ -1,0 +1,57 @@
+#index-page {
+  position: relative;
+  background: url("../img/surf.jpg") no-repeat center right / cover;
+  height: 90vh;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  .overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15rem;
+
+    .col {
+      width: 100%;
+      height: 100%;
+
+      h3,
+      h5,
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #index-page {
+    background-position: 33%;
+    .row {
+      display: block;
+
+      .col {
+        h1 {
+          font-size: 1.7rem;
+        }
+        h3,
+        h5,
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

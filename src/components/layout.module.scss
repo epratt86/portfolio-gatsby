@@ -1,0 +1,10 @@
+.content {
+  position: relative;
+  top: 165px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    top: 120px;
+  }
+}
