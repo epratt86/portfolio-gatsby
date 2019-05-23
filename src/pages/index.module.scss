@@ -46,16 +46,34 @@
   #index-page {
     background-position: 33%;
     .row {
+      margin: 0 auto;
       .col {
-        h1 {
-          font-size: 1.5rem;
+        margin: 0 auto;
+        h1,
+        p {
+          font-size: 2rem;
+        }
+        h3,
+        h5 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #index-page {
+    .row {
+      text-align: center;
+      .col {
+        h1,
+        p {
+          font-size: 1.4rem;
         }
         h3,
         h5 {
           font-size: 0.7rem;
-        }
-        p {
-          font-size: 1.5rem;
         }
       }
     }
