@@ -1,17 +1,19 @@
 import React from "react"
 import Typing from "react-typing-animation"
 import Head from "../components/head"
-import Nav from "../components/Nav"
+import Layout from "../components/layout"
 import indexStyles from "./index.module.scss"
 
 const IndexPage = () => {
   const { indexPage, overlay, row, col } = indexStyles
 
   return (
-    <div>
-      <Nav />
+    <Layout>
       <section id={indexPage}>
-        <Head title="Welcome" description="Coming Soon..." />
+        <Head
+          title="Welcome"
+          description="Welcome to ePratt.net. This is the personal portfolio site for Eric Pratt. Eric Pratt is a web developer based out of San Diego, California"
+        />
         <div className={overlay}>
           <div className="container">
             <div className={row}>
@@ -37,7 +39,7 @@ const IndexPage = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Layout>
   )
 }
 

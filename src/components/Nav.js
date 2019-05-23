@@ -1,30 +1,40 @@
 import React from "react"
+import Head from "../components/head"
 import { Link } from "gatsby"
 import NavStyles from "./Nav.module.scss"
 
 const Nav = () => {
+  const { header, brand, nav, activeNavItem } = NavStyles
   return (
-    <nav className="container">
-      <div className={NavStyles.brand}>
+    <header className={header}>
+      <Head />
+      <div className={brand}>
         <Link to="/">
-          <h2>ePratt | Dev</h2>
+          <h2>
+            eric<span>Pratt</span> | Dev
+          </h2>
         </Link>
       </div>
-      <ul>
-        <Link>
-          <li>Work</li>
-        </Link>
-        <Link>
-          <li>About</li>
-        </Link>
-        <Link>
-          <li>Blog</li>
-        </Link>
-        <Link>
-          <li>Contact</li>
-        </Link>
-      </ul>
-    </nav>
+      <nav className={nav}>
+        <ul>
+          <Link to="/" activeClassName={activeNavItem}>
+            <li>Home</li>
+          </Link>
+          <Link to="/work" activeClassName={activeNavItem}>
+            <li>Work</li>
+          </Link>
+          <Link to="/about" activeClassName={activeNavItem}>
+            <li>About</li>
+          </Link>
+          <Link to="/blog" activeClassName={activeNavItem}>
+            <li>Blog</li>
+          </Link>
+          <Link to="/contact" activeClassName={activeNavItem}>
+            <li>Contact</li>
+          </Link>
+        </ul>
+      </nav>
+    </header>
   )
 }
 

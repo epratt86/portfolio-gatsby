@@ -614,6 +614,10 @@ body {
   padding: 1rem 0;
 }
 
+.d-flex {
+  display: flex;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     max-width: 90%;

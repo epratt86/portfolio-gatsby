@@ -1,0 +1,14 @@
+.blog {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .row {
+    .col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
