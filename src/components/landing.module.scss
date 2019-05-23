@@ -1,0 +1,42 @@
+#landing {
+  background: url("../img/surf.jpg") no-repeat center right / cover;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  .overlay {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  #type-content {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #landing {
+    background-position: 33%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #landing {
+    .overlay {
+      text-align: right;
+      h1 {
+        font-size: 1.3rem;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
