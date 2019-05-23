@@ -37,6 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2rem;
 
     ul {
       display: flex;
@@ -68,11 +69,14 @@
     padding: 0;
     background: #000;
 
-    .nav ul {
-      justify-content: center;
+    .nav {
+      margin-top: 1rem;
+      ul {
+        justify-content: center;
 
-      li {
-        margin-right: 0.7rem;
+        li {
+          margin-right: 0.7rem;
+        }
       }
     }
   }
