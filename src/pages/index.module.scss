@@ -1,4 +1,4 @@
-#index-page {
+#landing {
   background: url("../img/surf.jpg") no-repeat center right / cover;
   height: 100vh;
   width: 100%;
@@ -14,67 +14,25 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
-  .row {
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // margin-top: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-
-    .col {
-      margin-left: auto;
-      h3,
-      h5 {
-        font-size: 1.3rem;
-      }
-      p {
-        text-align: center;
-        font-size: 2rem;
-        color: rgb(97, 236, 4);
-      }
-    }
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
 @media screen and (max-width: 1024px) {
-  #index-page {
+  #landing {
     background-position: 33%;
-    .row {
-      margin: 0 auto;
-      .col {
-        margin: 0 auto;
-        h1,
-        p {
-          font-size: 2rem;
-        }
-        h3,
-        h5 {
-          font-size: 1rem;
-        }
-      }
-    }
   }
 }
 
 @media screen and (max-width: 550px) {
-  #index-page {
-    .row {
-      text-align: center;
-      .col {
-        h1,
-        p {
-          font-size: 1.4rem;
-        }
-        h3,
-        h5 {
-          font-size: 0.7rem;
-        }
+  #landing {
+    .overlay {
+      text-align: right;
+      h1 {
+        font-size: 1.3rem;
+      }
+      h5 {
+        font-size: 1rem;
       }
     }
   }

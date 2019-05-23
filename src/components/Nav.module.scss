@@ -21,16 +21,21 @@
   }
 
   span {
-    color: rgb(97, 236, 4);
+    color: #0496ec;
   }
 
   a {
     text-decoration: none;
     color: #fff;
+
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
   }
 
   .active-nav-item {
-    color: rgb(97, 236, 4);
+    color: #0496ec;
   }
 
   .nav {
@@ -56,7 +61,7 @@
         transition: all ease-in 200ms;
 
         &:hover {
-          color: rgb(97, 236, 4);
+          color: #0496ec;
         }
       }
     }

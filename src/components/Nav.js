@@ -1,7 +1,9 @@
 import React from "react"
 import Head from "../components/head"
 import { Link } from "gatsby"
+import { FaCode } from "react-icons/fa"
 import NavStyles from "./Nav.module.scss"
+import { IconContext } from "react-icons"
 
 const Nav = () => {
   const { header, brand, nav, activeNavItem } = NavStyles
@@ -10,9 +12,11 @@ const Nav = () => {
       <Head />
       <div className={brand}>
         <Link to="/">
-          <h2>
-            eric<span>Pratt</span> | Dev
-          </h2>
+          <IconContext.Provider value={{ style: { verticalAlign: "middle" } }}>
+            <h2>
+              <FaCode />e<span>Pratt</span>
+            </h2>
+          </IconContext.Provider>
         </Link>
       </div>
       <nav className={nav}>

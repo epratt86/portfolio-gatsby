@@ -602,20 +602,3 @@ pre tt:after {
   }
 }
 // End Reset
-
-// Utilities
-body {
-  background: #000;
-  color: #fff;
-}
-.container {
-  margin: 0 auto;
-  max-width: 85%;
-  padding: 1rem 0;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 95%;
-  }
-}
