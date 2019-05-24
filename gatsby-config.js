@@ -2,7 +2,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: "< EricPratt />",
+    title: "ePratt.net",
     author: "Eric Pratt",
     description:
       "A look into the web creations of Eric Pratt, professional developer.",

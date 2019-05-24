@@ -1,5 +1,4 @@
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
-
 html {
   font-family: "Roboto", sans-serif;
   -ms-text-size-adjust: 100%;
@@ -602,3 +601,19 @@ pre tt:after {
   }
 }
 // End Reset
+
+// Variables live here
+$website-width: 1280px;
+$main-color: #0496ec;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+
+// Utilities
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}

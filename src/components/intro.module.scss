@@ -1,6 +1,31 @@
 #intro {
-  background: black;
-  color: #fff;
-  height: 100vh;
+  background: #ccc;
+  color: #333;
   width: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+
+.specials {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+
+  h3 {
+    color: #0496ec;
+    margin-top: 1rem;
+  }
+
+  svg {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .specials {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
 }

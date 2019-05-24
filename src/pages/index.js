@@ -8,7 +8,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Head
-        title="Welcome"
+        title="Home"
         description="Welcome to ePratt.net. This is the personal portfolio site for Eric Pratt. Eric Pratt is a web developer based out of San Diego, California"
       />
       <Landing />

@@ -2,11 +2,32 @@ import React from "react"
 import Head from "../components/head"
 import { Link } from "gatsby"
 import { FaCode } from "react-icons/fa"
-import NavStyles from "./Nav.module.scss"
 import { IconContext } from "react-icons"
+import _ from "lodash.throttle"
+import navStyles from "./Nav.module.scss"
+
+// Nav background on scroll - throttled w/ lodash
+try {
+  window.addEventListener(
+    "scroll",
+    _(() => {
+      if (window.scrollY > 200) {
+        document
+          .querySelector("header")
+          .setAttribute("style", "background: #000; opacity: 0.7")
+      } else {
+        document
+          .querySelector("header")
+          .setAttribute("style", "background: transparent")
+      }
+    }, 300)
+  )
+} catch (err) {
+  console.log("error message: ", err)
+}
 
 const Nav = () => {
-  const { header, brand, nav, activeNavItem } = NavStyles
+  const { header, brand, nav, activeNavItem } = navStyles
   return (
     <header className={header}>
       <Head />

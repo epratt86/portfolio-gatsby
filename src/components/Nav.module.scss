@@ -7,13 +7,14 @@
   display: flex;
   justify-content: space-between;
   padding: 0 3rem;
+  padding-bottom: 1rem;
   z-index: 2;
 
   .brand {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   h2 {
@@ -42,7 +43,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     ul {
       display: flex;
@@ -72,12 +73,13 @@
   .header {
     display: block;
     padding: 0;
-    background: #000;
+    background: #000 !important;
 
     .nav {
       margin-top: 1rem;
       ul {
         justify-content: center;
+        margin-top: 0.3rem;
 
         li {
           margin-right: 0.7rem;
