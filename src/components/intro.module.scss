@@ -24,6 +24,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #intro {
+    padding-bottom: 2rem;
+  }
   .specials {
     grid-template-columns: 1fr;
     padding: 0 1rem;
