@@ -4,11 +4,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 3rem;
   padding-bottom: 1rem;
   z-index: 2;
+  background: #333;
 
   .brand {
     display: flex;
@@ -69,21 +67,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
   .header {
-    display: block;
-    padding: 0;
-    background: #000 !important;
-
     .nav {
-      margin-top: 1rem;
+      justify-content: center;
       ul {
         justify-content: center;
-        margin-top: 0.3rem;
-
-        li {
-          margin-right: 0.7rem;
-        }
       }
     }
   }
