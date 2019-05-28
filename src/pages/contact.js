@@ -34,7 +34,7 @@ const ContactPage = () => {
                 method="POST"
                 className="py-5"
                 data-netlify="true"
-                data-netlify-recaptcha="true"
+                data-netlify-honeypot="bot-field"
               >
                 <div className={textFields}>
                   <input
@@ -42,11 +42,12 @@ const ContactPage = () => {
                     className={name}
                     placeholder="Name"
                     name="name"
+                    required
                   />
                   <input
                     type="text"
                     className={subject}
-                    placeholder="Subjects"
+                    placeholder="Subject"
                     name="subject"
                   />
                   <input
@@ -54,6 +55,7 @@ const ContactPage = () => {
                     className={email}
                     placeholder="Email Address"
                     name="email"
+                    required
                   />
                   <input
                     type="text"
@@ -61,14 +63,13 @@ const ContactPage = () => {
                     placeholder="Phone Number"
                     name="phone"
                   />
+                  <input type="hidden" name="form-name" value="contact" />
                   <textarea
                     className={message}
                     placeholder="Enter Message"
                     name="message"
+                    required
                   />
-                  <div className="my-1">
-                    <div data-netlify-recaptcha="true" />
-                  </div>
                 </div>
                 <button type="submit" className="btn btn-primary btn-block">
                   Submit
