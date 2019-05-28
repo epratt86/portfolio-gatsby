@@ -32,6 +32,7 @@ const ContactPage = () => {
               <form
                 name="contact"
                 method="POST"
+                action="/success"
                 className="py-5"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
