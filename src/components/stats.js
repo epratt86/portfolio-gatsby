@@ -3,7 +3,6 @@ import {
   FaUsers,
   FaCodeBranch,
   FaAward,
-  FaHourglass,
   FaHourglassStart,
 } from "react-icons/fa"
 import statsStyle from "./stats.module.scss"
