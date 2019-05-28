@@ -1,16 +1,61 @@
 .contact {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: #333;
   color: #fff;
-  .row {
-    .col {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  font-family: "Roboto Mono", monospace;
+  padding-top: 10rem;
+
+  .text-fields {
+    display: grid;
+    grid-template-areas:
+      "name email"
+      "subject phone"
+      "message message";
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+
+    // Grid Areas
+    .name {
+      grid-area: name;
     }
+
+    .subject {
+      grid-area: subject;
+    }
+
+    .email {
+      grid-area: email;
+    }
+
+    .phone {
+      grid-area: phone;
+    }
+
+    .message {
+      grid-area: message;
+      height: 120px;
+    }
+
+    input,
+    textarea {
+      padding: 0.5rem 1rem;
+    }
+
+    button[type="submit"] {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .text-fields {
+    grid-template-areas:
+      "name"
+      "subject"
+      "email"
+      "phone"
+      "message";
   }
 }
