@@ -11,18 +11,21 @@ const Success = () => {
       />
       <section
         style={{
-          height: "100vh",
+          height: "80vh",
           background: "#333",
           color: "#fff",
           fontFamily: "Roboto Mono",
+          paddingTop: "10rem",
         }}
       >
         <div className="container">
-          <div className="row">
+          <div className="row flex-column align-items-center justify-content-center">
             <h1 className="text-center">Success</h1>
             <div className="bottom-line" />
             <h4 className="text-center">Thank you for your interest</h4>
-            <p>I will be getting in contact with you soon. Cheers!</p>
+            <p className="mt-5">
+              I will be getting in contact with you soon. Cheers!
+            </p>
             <p>- Eric Pratt</p>
           </div>
         </div>
