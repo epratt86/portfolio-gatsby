@@ -23,7 +23,7 @@ try {
 }
 
 const Nav = () => {
-  const { header, brand, nav, activeNavItem } = navStyles
+  const { header, brand, nav, activeNavItem, contactLink } = navStyles
   return (
     <header className={header}>
       <Head />
@@ -54,7 +54,7 @@ const Nav = () => {
               <li className="mr-3">Blog</li>
             </Link>
             <Link to="/contact" activeClassName={activeNavItem}>
-              <li>Contact</li>
+              <li className={contactLink}>Contact</li>
             </Link>
           </ul>
         </nav>
