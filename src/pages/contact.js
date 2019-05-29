@@ -81,11 +81,15 @@ const ContactPage = () => {
         </div>
       </section>
       <section
-        style={{ background: "#ccc", fontFamily: "Roboto Mono", color: "#333" }}
+        style={{
+          background: "#0496ec",
+          fontFamily: "Roboto Mono",
+          color: "#fff",
+        }}
       >
         <div className="container">
           <div className="row">
-            <h2 className="text-center display-2 my-5">
+            <h2 className="text-center display-5 w-100 my-5">
               Let's get started on your next project.
             </h2>
           </div>
