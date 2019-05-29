@@ -12,8 +12,8 @@ const Success = () => {
       <section
         style={{
           height: "80vh",
-          background: "#333",
-          color: "#fff",
+          background: "#eee",
+          color: "#333",
           fontFamily: "Roboto Mono",
           paddingTop: "10rem",
         }}
