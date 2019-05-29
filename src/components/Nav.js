@@ -42,16 +42,16 @@ const Nav = () => {
         <nav className={nav}>
           <ul>
             <Link to="/" activeClassName={activeNavItem}>
-              <li>Home</li>
+              <li className="mr-3">Home</li>
             </Link>
             <Link to="/work" activeClassName={activeNavItem}>
-              <li>Work</li>
+              <li className="mr-3">Work</li>
             </Link>
             <Link to="/about" activeClassName={activeNavItem}>
-              <li>About</li>
+              <li className="mr-3">About</li>
             </Link>
             <Link to="/blog" activeClassName={activeNavItem}>
-              <li>Blog</li>
+              <li className="mr-3">Blog</li>
             </Link>
             <Link to="/contact" activeClassName={activeNavItem}>
               <li>Contact</li>
