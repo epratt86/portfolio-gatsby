@@ -3,7 +3,7 @@ title: "Getting Started with Gatsby"
 date: "2019-06-04"
 ---
 
-## Getting Started with Gatsby
+## What the hell is a Gatsby?
 
 Gatsby.js is an open source framework built on top of React to produce blazing fast single page applications. Gatsby works by pulling data from a variety of different sources. The architech decides on what makes the most sense:
 

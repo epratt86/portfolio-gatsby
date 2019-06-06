@@ -6,7 +6,7 @@ import Head from "../components/head"
 import BlogStyles from "./blog.module.scss"
 
 const BlogPage = () => {
-  const { blog } = BlogStyles
+  const { blog, posts, post } = BlogStyles
 
   // Markdown Query
   const data = useStaticQuery(graphql`
@@ -40,10 +40,10 @@ const BlogPage = () => {
               <h1 className="text-center display-4">Blog</h1>
               <div className="bottom-line" />
               <h4 className="text-center mb-5">Checkout my posts below</h4>
-              <ol>
+              <ol className={posts}>
                 {data.allMarkdownRemark.edges.map(edge => {
                   return (
-                    <li>
+                    <li className={post}>
                       <Link to={`/blog/${edge.node.fields.slug}`}>
                         <h2>{edge.node.frontmatter.title}</h2>
                         <p>{edge.node.frontmatter.date}</p>
