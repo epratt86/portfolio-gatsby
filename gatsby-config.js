@@ -2,10 +2,12 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: "ePratt.net",
+    title: "Portfolio",
     author: "Eric Pratt",
+    keywords: "web developer, san diego, Eric Pratt",
     description:
       "A look into the web creations of Eric Pratt, professional developer.",
+    siteUrl: "https://www.epratt.net",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

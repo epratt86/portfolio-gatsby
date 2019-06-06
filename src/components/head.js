@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import img from "../img/thumbnail.jpg"
 
 const Head = ({ title, description }) => {
   const data = useStaticQuery(graphql`
@@ -8,6 +9,8 @@ const Head = ({ title, description }) => {
       site {
         siteMetadata {
           title
+          keywords
+          siteUrl
         }
       }
     }
@@ -27,6 +30,16 @@ const Head = ({ title, description }) => {
         property="og:description"
         content={`${description}`}
       />
+      <meta
+        name="og:url"
+        property="og:url"
+        content={`${data.site.siteMetadata.siteUrl}`}
+      />
+      <meta name="og:image" property="og:image" content={img} />
+      <meta keywords={`${data.site.siteMetadata.keywords}`} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:site_name" content="Eric Pratt Web Developer" />
+      <meta name="twitter:image:alt" content="Eric Pratt Web Developer" />
       <meta name="robots" content="index, follow" />
       <link
         href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap"
