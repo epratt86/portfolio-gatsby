@@ -37,8 +37,19 @@ const Head = ({ title, description }) => {
       />
       <meta name="og:image" property="og:image" content={img} />
       <meta keywords={`${data.site.siteMetadata.keywords}`} />
-      <meta name="twitter:card" content="summary_large_image" />
       <meta property="og:site_name" content="Eric Pratt Web Developer" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        property="twitter:title"
+        content={`${title}`}
+      />
+      <meta
+        name="twitter:description"
+        property="twitter:description"
+        content={`${description}`}
+      />
+      <meta name="twitter:image" property="twitter:image" content={img} />
       <meta name="twitter:image:alt" content="Eric Pratt Web Developer" />
       <meta name="robots" content="index, follow" />
       <link
