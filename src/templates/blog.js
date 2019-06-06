@@ -12,6 +12,7 @@ export const query = graphql`
         title
         date
       }
+      excerpt
       html
     }
   }
@@ -20,7 +21,10 @@ export const query = graphql`
 const Blog = props => {
   return (
     <Layout>
-      <Head title={props.data.markdownRemark.frontmatter.title} />
+      <Head
+        title={props.data.markdownRemark.frontmatter.title}
+        description={props.data.markdownRemark.excerpt}
+      />
       <section id={styles.blog}>
         <div className="container">
           <div className="row">
