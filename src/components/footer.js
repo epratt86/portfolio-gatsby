@@ -19,6 +19,7 @@ const Footer = () => {
               href="https://www.github.com/epratt86"
               target="_blank"
               rel="noopener noreferrer"
+              title="Github"
               style={{
                 marginRight: "1rem",
                 color: "#0496ec",
@@ -30,6 +31,7 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/eric-pratt"
               target="_blank"
+              title="Linkedin"
               rel="noopener noreferrer"
               style={{ color: "#0496ec", fontSize: "2rem" }}
             >

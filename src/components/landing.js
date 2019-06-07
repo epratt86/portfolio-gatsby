@@ -30,7 +30,11 @@ const Landing = () => {
                   </h5>
                 </div>
               </Typing>
-              <Link to="/contact" className="btn btn-primary btn-lg">
+              <Link
+                to="/contact"
+                className="btn btn-primary btn-lg"
+                title="contact"
+              >
                 Get In touch
               </Link>
             </div>

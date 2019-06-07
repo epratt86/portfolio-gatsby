@@ -1,7 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import img from "../img/thumbnail.jpg"
 
 const Head = ({ title, description }) => {
   const data = useStaticQuery(graphql`
@@ -35,9 +34,14 @@ const Head = ({ title, description }) => {
         property="og:url"
         content={`${data.site.siteMetadata.siteUrl}`}
       />
-      <meta name="og:image" property="og:image" content={img} />
+      <meta
+        name="og:image"
+        property="og:image"
+        content="https://photos.app.goo.gl/FxA5iLirBhgzot9X6"
+      />
       <meta keywords={`${data.site.siteMetadata.keywords}`} />
       <meta property="og:site_name" content="Eric Pratt Web Developer" />
+      <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
@@ -49,13 +53,14 @@ const Head = ({ title, description }) => {
         property="twitter:description"
         content={`${description}`}
       />
-      <meta name="twitter:image" property="twitter:image" content={img} />
-      <meta name="twitter:image:alt" content="Eric Pratt Web Developer" />
-      <meta name="robots" content="index, follow" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap"
-        rel="stylesheet"
+      <meta
+        name="twitter:image"
+        property="twitter:image"
+        content="https://photos.app.goo.gl/FxA5iLirBhgzot9X6"
       />
+      <meta name="twitter:image:alt" content="Eric Pratt Web Developer" />
+      <meta name="twitter:site" content="@epratt.net" />
+      <meta name="robots" content="index, follow" />
       <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"

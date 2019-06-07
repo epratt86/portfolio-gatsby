@@ -75,7 +75,11 @@ const Intro = () => {
                   Once your site is created and on the web, I will show you how
                   to update any content you wish without having to know ANY
                   code. Future problem solved! <br />
-                  <Link to="/contact" className="btn btn-secondary mt-3">
+                  <Link
+                    to="/contact"
+                    className="btn btn-secondary mt-3"
+                    title="contact"
+                  >
                     Find out more
                   </Link>
                 </p>

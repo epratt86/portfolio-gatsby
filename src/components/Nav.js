@@ -29,7 +29,7 @@ const Nav = () => {
       <Head />
       <div className="container d-sm-block d-md-flex justify-content-between">
         <div className={brand}>
-          <Link to="/">
+          <Link to="/" title="home">
             <IconContext.Provider
               value={{ style: { verticalAlign: "middle" } }}
             >
@@ -41,19 +41,19 @@ const Nav = () => {
         </div>
         <nav className={nav}>
           <ul>
-            <Link to="/" activeClassName={activeNavItem}>
+            <Link to="/" activeClassName={activeNavItem} title="home">
               <li className="mr-3">Home</li>
             </Link>
-            <Link to="/work" activeClassName={activeNavItem}>
+            <Link to="/work" activeClassName={activeNavItem} title="work">
               <li className="mr-3">Work</li>
             </Link>
-            <Link to="/about" activeClassName={activeNavItem}>
+            <Link to="/about" activeClassName={activeNavItem} title="about">
               <li className="mr-3">About</li>
             </Link>
-            <Link to="/blog" activeClassName={activeNavItem}>
+            <Link to="/blog" activeClassName={activeNavItem} title="blog">
               <li className="mr-3">Blog</li>
             </Link>
-            <Link to="/contact" activeClassName={activeNavItem}>
+            <Link to="/contact" activeClassName={activeNavItem} title="contact">
               <li className={contactLink}>Contact</li>
             </Link>
           </ul>

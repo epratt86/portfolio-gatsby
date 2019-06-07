@@ -5,7 +5,7 @@ import Head from "../components/head"
 import WorkStyles from "./work.module.scss"
 
 const WorkPage = () => {
-  const { work, row, col } = WorkStyles
+  const { work } = WorkStyles
   return (
     <Layout>
       <Head
