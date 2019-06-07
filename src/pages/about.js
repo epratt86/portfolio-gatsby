@@ -19,9 +19,9 @@ const AboutPage = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1 className="text-center display-4">Eric Pratt</h1>
+              <h1 className="text-center display-4">About Me</h1>
               <div className="bottom-line" />
-              <h4 className="text-center mb-4">Web Developer</h4>
+              <h4 className="text-center mb-4">Developer | Surfer | Dude.</h4>
             </div>
           </div>
           <div className="row align-items-center">

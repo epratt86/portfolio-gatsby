@@ -20,8 +20,11 @@ const Intro = () => {
           <div className="row">
             <div className="col">
               <h1 className="text-center mt-5">
-                Web developer based out of
-                <br /> San Diego, California
+                Eric Pratt
+                <br />{" "}
+                <span style={{ fontSize: "18px" }}>
+                  Web Developer based out of San Diego, California
+                </span>
               </h1>
               <div className="bottom-line my-3" />
               <h4 className="text-center">
