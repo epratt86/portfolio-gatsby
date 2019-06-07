@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import img from "../img/thumbnail.jpg"
 
 const Head = ({ title, description }) => {
   const data = useStaticQuery(graphql`
@@ -34,11 +35,7 @@ const Head = ({ title, description }) => {
         property="og:url"
         content={`${data.site.siteMetadata.siteUrl}`}
       />
-      <meta
-        name="og:image"
-        property="og:image"
-        content="https://photos.app.goo.gl/FxA5iLirBhgzot9X6"
-      />
+      <meta name="og:image" property="og:image" content={img} />
       <meta keywords={`${data.site.siteMetadata.keywords}`} />
       <meta property="og:site_name" content="Eric Pratt Web Developer" />
       <meta property="og:type" content="website" />
