@@ -20,11 +20,13 @@ const Intro = () => {
           <div className="row">
             <div className="col">
               <h1 className="text-center mt-5">
-                Web developer based out of San Diego, CA
+                Web developer based out of
+                <br /> San Diego, California
               </h1>
-              <div className="bottom-line" />
+              <div className="bottom-line my-3" />
               <h4 className="text-center">
-                Specializing in custom design thats mobile & user friendly
+                Specializing in custom design that is mobile responsive & user
+                friendly
               </h4>
             </div>
           </div>
