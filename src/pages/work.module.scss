@@ -1,17 +1,7 @@
 .work {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 80vh;
   background: #eee;
   color: #333;
   font-family: "Roboto Mono", monospace;
-  .row {
-    .col {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+  padding-top: 10rem;
 }

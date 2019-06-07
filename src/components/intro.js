@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Stats from "../components/stats"
 import {
   FaFileAlt,
@@ -18,11 +19,13 @@ const Intro = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1 className="text-center mt-5">Web Developer</h1>
+              <h1 className="text-center mt-5">
+                Web developer based out of San Diego, CA
+              </h1>
               <div className="bottom-line" />
-              <p className="text-center">
+              <h4 className="text-center">
                 Specializing in custom design thats mobile & user friendly
-              </p>
+              </h4>
             </div>
           </div>
           <div className="row">
@@ -33,7 +36,9 @@ const Intro = () => {
                 <p>
                   The work starts before a single line of code is written. First
                   things first, come up with a concept of how the site or
-                  application will functions with a clear goal in mind.
+                  application will functions with a clear goal in mind. Find out
+                  what the main call to action is going to be and build the site
+                  around that intention.
                 </p>
               </div>
               <div>
@@ -41,8 +46,10 @@ const Intro = () => {
                 <h3>UI/UX</h3>
                 <p>
                   I provide the user with a clean application that loads quickly
-                  and looks great from whatever device they may have in front of
-                  them.
+                  (important!) and looks great. Doesn't matter if the user is
+                  viewing on their desktop, laptop, tablet, phone, whatever! The
+                  user experience is important for getting potential customers
+                  to stick around.
                 </p>
               </div>
               <div>
@@ -52,6 +59,8 @@ const Intro = () => {
                   Let's face it, your website is crucial for influencing how
                   customers view your brand identity. A professional look is
                   critical when customers are shopping you and your competitors.
+                  A solid search engine optimization (SEO) protocol will make
+                  sure your site is found in the first place.
                 </p>
               </div>
               <div>
@@ -60,7 +69,10 @@ const Intro = () => {
                 <p>
                   Once your site is created and on the web, I will show you how
                   to update any content you wish without having to know ANY
-                  code. Future problem solved!
+                  code. Future problem solved! <br />
+                  <Link to="/contact" className="btn btn-secondary mt-3">
+                    Find out more
+                  </Link>
                 </p>
               </div>
             </div>

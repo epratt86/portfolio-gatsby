@@ -1,5 +1,6 @@
 import React from "react"
 import Typing from "react-typing-animation"
+import { Link } from "gatsby"
 import landingStyles from "./landing.module.scss"
 
 const Landing = () => {
@@ -26,11 +27,12 @@ const Landing = () => {
                     take a look into my life... <br />
                     <Typing.Delay ms={100} />
                     <Typing.Speed ms={0} />
-                    <br />
-                    <span className="m-2">- eric</span>
                   </h5>
                 </div>
               </Typing>
+              <Link to="/contact" className="btn btn-primary btn-lg">
+                Get In touch
+              </Link>
             </div>
           </div>
         </div>
