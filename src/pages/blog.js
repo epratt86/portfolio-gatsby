@@ -27,7 +27,7 @@ const BlogPage = () => {
     <Layout>
       <Head
         title="Blog"
-        description="Welcome to my blog page. Here is where I talk about all things tech - and maybe even a few things that arent!"
+        description="Take a look at my blog page. Be sure to watch for new content to be delivered regularly."
       />
       <section id={blog}>
         <div className="container">

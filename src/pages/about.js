@@ -13,7 +13,7 @@ const AboutPage = () => {
     <Layout>
       <Head
         title="About"
-        description="Learn a little bit about me. My name is Eric and I'm a web developer. When I'm not behind a computer, you can usually find me out in the ocean. Drop me line to learn more."
+        description="Learn more about me, Eric Pratt, right here. Check out my about page to find out more about my interests and my work."
       />
       <div className={about}>
         <div className="container">
