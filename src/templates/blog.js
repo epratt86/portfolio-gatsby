@@ -37,13 +37,13 @@ const Blog = props => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1 className="text-center">
+              <h1 className="text-center display-4">
                 {props.data.contentfulBlogPost.title}
               </h1>
               <div className="bottom-line" />
-              <p className="text-center mb-5">
+              <h4 className="text-center mb-4">
                 {props.data.contentfulBlogPost.publishedDate}
-              </p>
+              </h4>
               {documentToReactComponents(
                 props.data.contentfulBlogPost.body.json,
                 options

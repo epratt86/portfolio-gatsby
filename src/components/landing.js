@@ -35,7 +35,7 @@ const Landing = () => {
                 className="btn btn-primary btn-lg"
                 title="contact"
               >
-                Get In touch
+                Get in touch
               </Link>
             </div>
           </div>

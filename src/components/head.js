@@ -58,6 +58,7 @@ const Head = ({ title, description }) => {
       <meta name="twitter:image:alt" content="Eric Pratt Web Developer" />
       <meta name="twitter:site" content="@epratt.net" />
       <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://www.epratt.net/" />
       <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
