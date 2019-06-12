@@ -13,6 +13,13 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "UA-130672056-1",
+        head: true,
+      },
+    },
+    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
