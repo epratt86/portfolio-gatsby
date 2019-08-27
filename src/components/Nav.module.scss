@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    letter-spacing: -2px;
 
     a {
       display: flex;
@@ -72,8 +73,10 @@
 
 @media screen and (max-width: 550px) {
   .header {
+    padding-bottom: 5px;
     .nav {
       justify-content: center;
+      margin-top: 5px;
       ul {
         justify-content: center;
       }
