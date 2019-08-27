@@ -1,5 +1,8 @@
 #landing {
-  background: url("../img/surf.jpg") no-repeat center right / cover;
+  background-image: url("../img/surf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 20%;
   height: 65vh;
   width: 100%;
   font-family: "Lexend Deca", Tahoma, sans-serif;
