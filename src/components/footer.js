@@ -7,7 +7,7 @@ const Footer = () => {
     <footer
       style={{
         background: "#000",
-        color: "#545454",
+        color: "#eee",
         padding: "3rem 0",
         fontFamily: "Roboto Mono",
       }}

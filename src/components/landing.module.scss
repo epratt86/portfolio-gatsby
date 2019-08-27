@@ -1,8 +1,8 @@
 #landing {
   background: url("../img/surf.jpg") no-repeat center right / cover;
-  height: 100vh;
+  height: 65vh;
   width: 100%;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Lexend Deca", Tahoma, sans-serif;
   overflow-y: hidden;
   overflow-x: hidden;
 
@@ -10,29 +10,30 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 65vh;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 2px 5px 4px #00000091;
   }
   #type-content {
-    height: 100vh;
+    height: 60vh;
+    font-family: "Roboto Mono", monospace;
   }
   a {
     position: absolute;
-    top: 60vh;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  #landing {
-    background-position: 33%;
+    top: 40vh;
+    font-family: "Lexend Deca", Tahoma, sans-serif;
   }
 }
 
 @media screen and (max-width: 550px) {
   #landing {
+    height: 55vh;
+    background-position-x: -110px;
+    background-position-y: 100px;
     .overlay {
+      height: 55vh;
       text-align: right;
       h1 {
         font-size: 1.3rem;
@@ -42,7 +43,6 @@
       }
     }
     a {
-      top: 58vh;
       right: 1rem;
     }
   }

@@ -11,8 +11,7 @@ const Skills = () => {
       }}
     >
       <div className="container">
-        <div className="display-4 text-center">Technical Skills</div>
-        <div className="bottom-line" />
+        <div className="display-4 text-center mb-3">Technical Skills</div>
         <h4>HTML5 - Semantic</h4>
         <div className="progress mb-3">
           <div
