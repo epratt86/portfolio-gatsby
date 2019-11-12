@@ -40,6 +40,17 @@ const Footer = () => {
           </div>
           <div className="col text-center mt-3">
             <p>Copyright © {year} epratt.net. All rights reserved</p>
+            <p>
+              This site was built using&nbsp;
+              <a
+                href="https://www.gatsbyjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                Gatsby
+              </a>
+            </p>
           </div>
         </div>
       </div>

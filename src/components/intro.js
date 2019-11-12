@@ -18,14 +18,11 @@ const Intro = () => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h1 className="text-center mt-5">
-                Eric Pratt
-                <br />{" "}
-                <span style={{ fontSize: "18px" }}>
-                  Web Developer based out of San Diego, California
-                </span>
-              </h1>
+              <h1 className="text-center mt-5 display-4">Eric Pratt</h1>
               <div className="bottom-line my-3" />
+              <h3 className="text-center">
+                Web Developer based out of San Diego, California
+              </h3>
               <h4 className="text-center">
                 Specializing in custom design that is mobile responsive & user
                 friendly
