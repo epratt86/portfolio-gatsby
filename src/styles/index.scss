@@ -618,7 +618,8 @@ $dark-color: #333;
   margin: 0 auto 1rem auto;
 }
 
-.button {
+.button,
+.button-blue {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #ffffff;
@@ -631,11 +632,23 @@ $dark-color: #333;
   white-space: nowrap;
 }
 
+.button-blue {
+  background: #0496ec;
+  color: #ffffff;
+  border: 2px solid #0496ec;
+}
+
 .button:hover {
   background: #0496ec;
   text-decoration: none;
   border: 2px solid #0496ec;
   color: #ffffff;
+}
+
+.button-blue:hover {
+  background: #ffffff;
+  text-decoration: none;
+  color: #0496ec;
 }
 
 h1,

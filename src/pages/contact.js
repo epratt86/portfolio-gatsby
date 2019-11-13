@@ -72,7 +72,7 @@ const ContactPage = () => {
                     required
                   />
                 </div>
-                <button type="submit" className="btn btn-primary btn-block">
+                <button type="submit" className="button-blue">
                   Submit
                 </button>
               </form>
