@@ -20,11 +20,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               title="Github"
-              style={{
-                marginRight: "1rem",
-                color: "#0496ec",
-                fontSize: "2rem",
-              }}
+              className="social-icon"
             >
               <FaGithub />
             </a>
@@ -33,7 +29,7 @@ const Footer = () => {
               target="_blank"
               title="Linkedin"
               rel="noopener noreferrer"
-              style={{ color: "#0496ec", fontSize: "2rem" }}
+              className="social-icon"
             >
               <FaLinkedin />
             </a>
@@ -46,7 +42,7 @@ const Footer = () => {
                 href="https://www.gatsbyjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: "none", color: "#0496ec" }}
               >
                 Gatsby
               </a>
