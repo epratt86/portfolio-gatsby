@@ -1,7 +1,7 @@
 #blog {
   background: #eee;
   color: #333;
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 5rem;
   min-height: 80vh;
 
@@ -14,5 +14,17 @@
   }
   img {
     padding: 1rem 0;
+  }
+}
+
+.post {
+  background: #ffffff;
+  padding: 2rem 1rem;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  #blog {
+    padding-top: 10rem;
   }
 }

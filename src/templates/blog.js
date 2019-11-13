@@ -44,13 +44,15 @@ const Blog = props => {
               <h4 className="text-center mb-4">
                 {props.data.contentfulBlogPost.publishedDate}
               </h4>
-              {documentToReactComponents(
-                props.data.contentfulBlogPost.body.json,
-                options
-              )}
-              <Link to={"/blog"} className="btn btn-outline-primary btn-lg">
-                Back
-              </Link>
+              <article className={styles.post}>
+                {documentToReactComponents(
+                  props.data.contentfulBlogPost.body.json,
+                  options
+                )}
+                <Link to={"/blog"} className="button-blue">
+                  Back
+                </Link>
+              </article>
             </div>
           </div>
         </div>
