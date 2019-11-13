@@ -36,6 +36,7 @@ const ContactPage = () => {
                 className="py-5"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
+                className={ContactStyles.form}
               >
                 <div className={textFields}>
                   <input
