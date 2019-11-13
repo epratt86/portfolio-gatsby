@@ -17,7 +17,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0px 2px 5px 4px #00000091;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   }
 
   .header {
@@ -38,22 +38,27 @@
 
 @media screen and (max-width: 768px) {
   #landing {
-    height: 55vh;
-    background-position-y: 100px;
+    height: 90vh;
+    background-position-y: 30px;
     .overlay {
-      height: 55vh;
+      height: 90vh;
       text-align: right;
       background-color: rgba(0, 0, 0, 0.5);
     }
     .header {
-      grid-template-columns: 100px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
     }
     .intro {
       margin-top: 22vh;
       height: auto;
+      text-align: center;
 
       h3 {
         font-size: 1.2rem;
+        line-height: 2rem;
       }
     }
   }
