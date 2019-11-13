@@ -3,5 +3,11 @@
   background: #eee;
   color: #333;
   font-family: "Lexend Deca", monospace;
-  padding-top: 10rem;
+  padding-top: 7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    padding-top: 10rem;
+  }
 }

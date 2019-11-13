@@ -3,7 +3,7 @@
   color: #333;
   min-height: 80vh;
   font-family: "Lexend Deca", Tahoma, sans-serif;
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 5rem;
 }
 
@@ -37,5 +37,11 @@
   p {
     font-size: 0.8rem;
     font-style: italic;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #blog {
+    padding-top: 10rem;
   }
 }

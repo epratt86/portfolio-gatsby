@@ -22,7 +22,7 @@ const Intro = () => {
                 Eric Pratt
                 <span className={introStyles.second}>Web Developer</span>
               </h1>
-              <div className="bottom-line my-3" />
+              <div className="bottom-line mt-2 mb-3" />
               <h3 className="text-center">
                 Based out of San Diego, California
               </h3>

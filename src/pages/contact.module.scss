@@ -5,7 +5,7 @@
   background: #eee;
   color: #333;
   font-family: "Lexend Deca", Tahoma, sans-serif;
-  padding-top: 10rem;
+  padding-top: 7rem;
 
   .text-fields {
     display: grid;
@@ -50,6 +50,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contact {
+    padding-top: 10rem;
+  }
   .contact .text-fields {
     grid-template-areas:
       "name"
