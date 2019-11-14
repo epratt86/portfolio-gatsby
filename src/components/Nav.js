@@ -36,11 +36,11 @@ const Nav = () => {
       }
     }
     // Nav opacity on scroll
-    window.addEventListener("scroll", throttle(changeOpacity, 300))
+    window.addEventListener("scroll", throttle(changeOpacity, 200))
 
     // if browser is small remove logo
     if (document.body.offsetWidth < 500) {
-      window.addEventListener("scroll", throttle(removeLogo, 300))
+      window.addEventListener("scroll", throttle(removeLogo, 200))
     }
   }
 

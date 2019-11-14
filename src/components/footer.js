@@ -35,7 +35,10 @@ const Footer = () => {
             </a>
           </div>
           <div className="col text-center mt-3">
-            <p>Copyright © {year} epratt.net. All rights reserved</p>
+            <p>
+              epratt.net&nbsp;
+              <span style={{ fontSize: "1.5rem" }}>©</span>&nbsp;{year}
+            </p>
             <p>
               This site was built using&nbsp;
               <a
