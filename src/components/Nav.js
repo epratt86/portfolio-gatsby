@@ -7,6 +7,7 @@ import navStyles from "./Nav.module.scss"
 
 const Nav = () => {
   const { header, brand, nav, activeNavItem, contactLink } = navStyles
+
   return (
     <header className={header}>
       <Head />
