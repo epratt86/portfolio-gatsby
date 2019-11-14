@@ -35,7 +35,7 @@ const BlogPage = () => {
             <div className="col">
               <h1 className="text-center display-4">Blog</h1>
               <div className="bottom-line" />
-              <h4 className="text-center mb-5">Checkout my posts below</h4>
+              <h4 className="text-center mb-4">Checkout my posts below</h4>
               <ol className={posts}>
                 {data.allContentfulBlogPost.edges.map(edge => {
                   return (
