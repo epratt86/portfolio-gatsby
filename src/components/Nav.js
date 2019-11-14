@@ -8,11 +8,48 @@ import navStyles from "./Nav.module.scss"
 const Nav = () => {
   const { header, brand, nav, activeNavItem, contactLink } = navStyles
 
+  function throttle(fn, wait) {
+    var time = Date.now()
+    return function() {
+      if (time + wait - Date.now() < 0) {
+        fn()
+        time = Date.now()
+      }
+    }
+  }
+
+  const changeOpacity = () => {
+    if (window.scrollY > 400) {
+      document.querySelector("#navbar").style.opacity = 0.6
+    } else {
+      document.querySelector("#navbar").style.opacity = 1
+    }
+  }
+
+  const removeLogo = () => {
+    if (window.scrollY > 400) {
+      document.querySelector("#navbar").style.opacity = 1
+      document.querySelector("#brand").style.display = "none"
+    } else {
+      document.querySelector("#brand").style.display = "block"
+    }
+  }
+
+  if (window.document !== undefined) {
+    // Nav opacity on scroll
+    window.addEventListener("scroll", throttle(changeOpacity, 300))
+
+    // if browser is small remove logo
+    if (document.body.offsetWidth < 500) {
+      window.addEventListener("scroll", throttle(removeLogo, 300))
+    }
+  }
+
   return (
-    <header className={header}>
+    <header className={header} id="navbar">
       <Head />
       <div className="container d-sm-block d-md-flex justify-content-between">
-        <div className={brand}>
+        <div className={brand} id="brand">
           <Link to="/" title="home">
             <IconContext.Provider
               value={{
