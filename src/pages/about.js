@@ -22,9 +22,7 @@ const AboutPage = ({ data }) => {
             <div className="col">
               <h1 className="text-center display-4">About Me</h1>
               <div className="bottom-line" />
-              <h4 className="text-center mb-4">
-                Web Developer | Problem Solver
-              </h4>
+              <h4 className="text-center mb-4">Problem solver</h4>
             </div>
           </div>
           <div className={AboutStyles.bio}>

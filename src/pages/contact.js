@@ -26,9 +26,7 @@ const ContactPage = () => {
             <div className="col">
               <h1 className="display-4 text-center">Contact</h1>
               <div className="bottom-line" />
-              <h4 className="text-center mb-4">
-                Fill out form to get in touch
-              </h4>
+              <h4 className="text-center mb-4">Get in touch</h4>
               <form
                 name="contact"
                 method="POST"
@@ -91,7 +89,7 @@ const ContactPage = () => {
         <div className="container">
           <div className="row">
             <h2 className="text-center display-5 w-100 my-5">
-              Let's get started on your next project.
+              Let's get started on your next project!
             </h2>
           </div>
         </div>
