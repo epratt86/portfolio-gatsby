@@ -18,24 +18,23 @@ const Nav = () => {
     }
   }
 
-  const changeOpacity = () => {
-    if (window.scrollY > 400) {
-      document.querySelector("#navbar").style.opacity = 0.6
-    } else {
-      document.querySelector("#navbar").style.opacity = 1
+  if (window.document !== "undefined") {
+    const changeOpacity = () => {
+      if (window.scrollY > 400) {
+        document.querySelector("#navbar").style.opacity = 0.6
+      } else {
+        document.querySelector("#navbar").style.opacity = 1
+      }
     }
-  }
 
-  const removeLogo = () => {
-    if (window.scrollY > 400) {
-      document.querySelector("#navbar").style.opacity = 1
-      document.querySelector("#brand").style.display = "none"
-    } else {
-      document.querySelector("#brand").style.display = "block"
+    const removeLogo = () => {
+      if (window.scrollY > 400) {
+        document.querySelector("#navbar").style.opacity = 1
+        document.querySelector("#brand").style.display = "none"
+      } else {
+        document.querySelector("#brand").style.display = "block"
+      }
     }
-  }
-
-  if (window.document !== undefined) {
     // Nav opacity on scroll
     window.addEventListener("scroll", throttle(changeOpacity, 300))
 
