@@ -33,8 +33,12 @@ const Nav = () => {
             <Link to="/" activeClassName={activeNavItem} title="home">
               <li className="mr-3">Home</li>
             </Link>
-            <Link to="/work" activeClassName={activeNavItem} title="work">
-              <li className="mr-3">Work</li>
+            <Link
+              to="/projects"
+              activeClassName={activeNavItem}
+              title="projects"
+            >
+              <li className="mr-3">Projects</li>
             </Link>
             <Link to="/about" activeClassName={activeNavItem} title="about">
               <li className="mr-3">About</li>
