@@ -18,7 +18,7 @@ const Nav = () => {
     }
   }
 
-  if (window.document !== "undefined") {
+  if (typeof window !== "undefined") {
     const changeOpacity = () => {
       if (window.scrollY > 400) {
         document.querySelector("#navbar").style.opacity = 0.6
