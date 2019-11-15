@@ -1,7 +1,6 @@
 .project {
   box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.3s linear;
-  margin-bottom: 1rem;
 
   .img-container {
     position: relative;
@@ -67,6 +66,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .project:hover {
