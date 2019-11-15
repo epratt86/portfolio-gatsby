@@ -62,6 +62,19 @@
   }
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
 .project:hover {
   box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
