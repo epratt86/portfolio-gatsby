@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
@@ -6,8 +7,8 @@ const Success = () => {
   return (
     <Layout>
       <Head
-        title="Success"
-        description="Thank you for your interest. I will be in contact with you shortly - Eric Pratt"
+        title='Success'
+        description='Thank you for your interest. I will be in contact with you shortly - Eric Pratt'
       />
       <section
         style={{
@@ -18,15 +19,28 @@ const Success = () => {
           paddingTop: "10rem",
         }}
       >
-        <div className="container">
-          <div className="row flex-column align-items-center justify-content-center">
-            <h1 className="text-center">Success</h1>
-            <div className="bottom-line" />
-            <h4 className="text-center">Thank you for your interest</h4>
-            <p className="mt-5">
-              I will be getting in contact with you soon. Cheers!
-            </p>
-            <p>- Eric Pratt</p>
+        <div className='container'>
+          <div className='row flex-column align-items-center justify-content-center'>
+            <h1 className='text-center'>Success</h1>
+            <div className='bottom-line' />
+            <article
+              style={{
+                background: "#ffffff",
+                boxShadow: "2px 5px 3px 0px rgba(0, 0, 0, 0.5)",
+                maxWidth: "95vw",
+                padding: "1rem",
+              }}
+            >
+              <h5 className='text-center'>
+                Your form has successfully been submitted.
+              </h5>
+              <br />
+              <p>I will be getting in contact with you soon. Cheers!</p>
+              <p style={{ textAlign: "right" }}>- Eric Pratt</p>
+              <Link to='/' className='button-blue'>
+                Return Home
+              </Link>
+            </article>
           </div>
         </div>
       </section>
