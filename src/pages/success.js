@@ -28,14 +28,13 @@ const Success = () => {
                 background: "#ffffff",
                 boxShadow: "2px 5px 3px 0px rgba(0, 0, 0, 0.5)",
                 maxWidth: "95vw",
+                width: "100%",
                 padding: "1rem",
               }}
             >
-              <h5 className='text-center'>
-                Your form has successfully been submitted.
-              </h5>
+              <p>Your form has successfully been submitted.</p>
               <br />
-              <p>I will be getting in contact with you soon. Cheers!</p>
+              <p>I will be getting in contact with you soon</p>
               <p style={{ textAlign: "right" }}>- Eric Pratt</p>
               <Link to='/' className='button-blue'>
                 Return Home
