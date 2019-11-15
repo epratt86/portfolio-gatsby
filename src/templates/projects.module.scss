@@ -1,0 +1,21 @@
+#projects {
+  background: #eee;
+  padding-top: 7rem;
+  font-family: "Lexend Deca", Arial, sans-serif;
+
+  .post {
+    background: #ffffff;
+    padding: 2rem 1rem;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #projects {
+    padding-top: 10rem;
+    .post {
+      margin-top: 4rem;
+    }
+  }
+}
