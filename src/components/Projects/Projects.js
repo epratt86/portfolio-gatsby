@@ -33,12 +33,10 @@ const Projects = () => {
 
   return (
     <section className={styles.projects}>
-      <div className='container'>
-        <div className={styles.grid}>
-          {projects.map(item => {
-            return <Project key={item.id} {...item} />
-          })}
-        </div>
+      <div className={styles.grid}>
+        {projects.map(item => {
+          return <Project key={item.id} {...item} />
+        })}
       </div>
     </section>
   )

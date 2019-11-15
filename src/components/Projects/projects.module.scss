@@ -74,6 +74,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .project {
+    .footer {
+      padding: 1rem 0.5rem;
+
+      p,
+      a {
+        font-size: 12px;
+      }
+    }
+  }
   .grid {
     grid-template-columns: 1fr;
   }
