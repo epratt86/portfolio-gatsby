@@ -23,7 +23,7 @@ const Blog = props => {
       "embedded-asset-block": node => {
         const alt = node.data.target.fields.title["en-US"]
         const url = node.data.target.fields.file["en-US"].url
-        return <img alt={alt} src={url} className="d-block img-fluid m-auto" />
+        return <img alt={alt} src={url} className='d-block img-fluid m-auto' />
       },
     },
   }
@@ -31,17 +31,15 @@ const Blog = props => {
     <Layout>
       <Head
         title={props.data.contentfulBlogPost.title}
-        description="A blog post by Eric Pratt"
+        description='A blog post by Eric Pratt'
       />
       <section id={styles.blog}>
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <h1 className="text-center display-4">
-                {props.data.contentfulBlogPost.title}
-              </h1>
-              <div className="bottom-line" />
-              <h4 className="text-center mb-4">
+        <div className='container'>
+          <div className='row'>
+            <div className='col'>
+              <h1 className='text-center display-4'>Blog Post</h1>
+              <div className='bottom-line' />
+              <h4 className='text-center mb-4'>
                 {props.data.contentfulBlogPost.publishedDate}
               </h4>
               <article className={styles.post}>
@@ -49,7 +47,7 @@ const Blog = props => {
                   props.data.contentfulBlogPost.body.json,
                   options
                 )}
-                <Link to={"/blog"} className="button-blue">
+                <Link to={"/blog"} className='button-blue'>
                   Back
                 </Link>
               </article>

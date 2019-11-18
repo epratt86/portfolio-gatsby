@@ -36,9 +36,7 @@ const Projects = props => {
         <div className='container'>
           <div className='row'>
             <div className='col'>
-              <h1 className='text-center display-4'>
-                {props.data.contentfulProjects.title}
-              </h1>
+              <h1 className='text-center display-4'>Project Overview</h1>
               <div className='bottom-line' />
               <article className={styles.post}>
                 {documentToReactComponents(
